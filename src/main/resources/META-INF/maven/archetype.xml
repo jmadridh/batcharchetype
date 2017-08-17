@@ -2,7 +2,23 @@
   <id>batcharchetype</id>
   <sources>
     <source>src/main/java/App.java</source>
+	<source>/src/main/app/NOTICE</source>
+	<source>/src/main/app/batchframeworkapi.xml</source>
+	<source>/src/main/app/config.xml</source>
+	<source>/src/main/app/mule-app.properties</source>
+	<source>/src/main/app/mule-deploy.properties</source>
   </sources>
+  <resources>
+	<resource>/src/main/resources/dev.properties</resource>
+	<resource>/src/main/resources/log4j2.xml</resource>
+  </resources>
+  <sources>
+	<source>/src/test/munit/batchframeworkapi-test-suite.xml</source>
+  </sources>
+  <testResources>
+	<resource>/src/test/resources/dev.properties</resource>
+	<resource>/src/test/resources/log4j2-test.xml</resource>
+  </testResources>
   <testSources>
     <source>src/test/java/AppTest.java</source>
   </testSources>
